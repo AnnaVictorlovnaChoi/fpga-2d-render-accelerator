@@ -1,0 +1,67 @@
+library verilog;
+use verilog.vl_types.all;
+entity axi_frame_reader is
+    generic(
+        AXI_ADDR_WIDTH  : integer := 32;
+        AXI_DATA_WIDTH  : integer := 32;
+        AXI_ID_WIDTH    : integer := 4;
+        BURST_LEN       : integer := 16
+    );
+    port(
+        axi_rst_n       : in     vl_logic;
+        start           : in     vl_logic;
+        frame_base      : in     vl_logic_vector;
+        frame_size      : in     vl_logic_vector(31 downto 0);
+        busy            : out    vl_logic;
+        done            : out    vl_logic;
+        error           : out    vl_logic;
+        io_ddrMasters_0_clk: in     vl_logic;
+        io_ddrMasters_0_ar_payload_id: out    vl_logic_vector;
+        io_ddrMasters_0_ar_payload_addr: out    vl_logic_vector;
+        io_ddrMasters_0_ar_payload_len: out    vl_logic_vector(7 downto 0);
+        io_ddrMasters_0_ar_payload_size: out    vl_logic_vector(2 downto 0);
+        io_ddrMasters_0_ar_payload_burst: out    vl_logic_vector(1 downto 0);
+        io_ddrMasters_0_ar_payload_cache: out    vl_logic_vector(3 downto 0);
+        io_ddrMasters_0_ar_payload_qos: out    vl_logic_vector(3 downto 0);
+        io_ddrMasters_0_ar_payload_region: out    vl_logic_vector(3 downto 0);
+        io_ddrMasters_0_ar_payload_prot: out    vl_logic_vector(2 downto 0);
+        io_ddrMasters_0_ar_payload_lock: out    vl_logic;
+        io_ddrMasters_0_ar_valid: out    vl_logic;
+        io_ddrMasters_0_ar_ready: in     vl_logic;
+        io_ddrMasters_0_r_payload_id: in     vl_logic_vector;
+        io_ddrMasters_0_r_payload_data: in     vl_logic_vector;
+        io_ddrMasters_0_r_payload_resp: in     vl_logic_vector(1 downto 0);
+        io_ddrMasters_0_r_payload_last: in     vl_logic;
+        io_ddrMasters_0_r_valid: in     vl_logic;
+        io_ddrMasters_0_r_ready: out    vl_logic;
+        io_ddrMasters_0_aw_payload_id: out    vl_logic_vector;
+        io_ddrMasters_0_aw_payload_addr: out    vl_logic_vector;
+        io_ddrMasters_0_aw_payload_len: out    vl_logic_vector(7 downto 0);
+        io_ddrMasters_0_aw_payload_size: out    vl_logic_vector(2 downto 0);
+        io_ddrMasters_0_aw_payload_burst: out    vl_logic_vector(1 downto 0);
+        io_ddrMasters_0_aw_payload_cache: out    vl_logic_vector(3 downto 0);
+        io_ddrMasters_0_aw_payload_qos: out    vl_logic_vector(3 downto 0);
+        io_ddrMasters_0_aw_payload_region: out    vl_logic_vector(3 downto 0);
+        io_ddrMasters_0_aw_payload_prot: out    vl_logic_vector(2 downto 0);
+        io_ddrMasters_0_aw_payload_lock: out    vl_logic;
+        io_ddrMasters_0_aw_valid: out    vl_logic;
+        io_ddrMasters_0_aw_ready: in     vl_logic;
+        io_ddrMasters_0_w_payload_data: out    vl_logic_vector;
+        io_ddrMasters_0_w_payload_strb: out    vl_logic_vector;
+        io_ddrMasters_0_w_payload_last: out    vl_logic;
+        io_ddrMasters_0_w_valid: out    vl_logic;
+        io_ddrMasters_0_w_ready: in     vl_logic;
+        io_ddrMasters_0_b_payload_id: in     vl_logic_vector;
+        io_ddrMasters_0_b_payload_resp: in     vl_logic_vector(1 downto 0);
+        io_ddrMasters_0_b_valid: in     vl_logic;
+        io_ddrMasters_0_b_ready: out    vl_logic;
+        fifo_full       : in     vl_logic;
+        fifo_wr_en      : out    vl_logic;
+        fifo_wr_data    : out    vl_logic_vector
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of AXI_ADDR_WIDTH : constant is 2;
+    attribute mti_svvh_generic_type of AXI_DATA_WIDTH : constant is 2;
+    attribute mti_svvh_generic_type of AXI_ID_WIDTH : constant is 2;
+    attribute mti_svvh_generic_type of BURST_LEN : constant is 2;
+end axi_frame_reader;

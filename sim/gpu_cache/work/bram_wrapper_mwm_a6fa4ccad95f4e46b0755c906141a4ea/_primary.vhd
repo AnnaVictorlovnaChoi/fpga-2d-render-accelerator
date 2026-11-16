@@ -1,0 +1,62 @@
+library verilog;
+use verilog.vl_types.all;
+entity bram_wrapper_mwm_a6fa4ccad95f4e46b0755c906141a4ea is
+    generic(
+        FAMILY          : string  := "TITANIUM";
+        WCLK_POLARITY   : vl_logic := Hi1;
+        WCLKE_POLARITY  : vl_logic := Hi1;
+        WE_POLARITY     : vl_logic := Hi1;
+        WRITE_MODE      : string  := "READ_FIRST";
+        RCLK_POLARITY   : vl_logic := Hi1;
+        RE_POLARITY     : vl_logic := Hi1;
+        OUTPUT_REG      : vl_logic := Hi0;
+        BYTEEN_POLARITY : vl_logic := Hi1;
+        RST_POLARITY    : vl_logic := Hi1;
+        RESET_RAM       : string  := "ASYNC";
+        RESET_OUTREG    : string  := "ASYNC";
+        WADDREN_POLARITY: vl_logic := Hi1;
+        RADDREN_POLARITY: vl_logic := Hi1;
+        DATA_WIDTH_A    : integer := 16;
+        DATA_WIDTH_B    : integer := 16;
+        ADDR_WIDTH_A    : integer := 4;
+        ADDR_WIDTH_B    : integer := 4;
+        BYTEEN_ENABLE   : integer := 0;
+        BYTEEN_WIDTH    : integer := 2
+    );
+    port(
+        wclk            : in     vl_logic;
+        wclke           : in     vl_logic;
+        byteen          : in     vl_logic_vector;
+        we              : in     vl_logic;
+        waddr           : in     vl_logic_vector;
+        wdata           : in     vl_logic_vector;
+        rclk            : in     vl_logic;
+        re              : in     vl_logic;
+        raddr           : in     vl_logic_vector;
+        rdata           : out    vl_logic_vector;
+        reset           : in     vl_logic;
+        waddren         : in     vl_logic;
+        raddren         : in     vl_logic
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of FAMILY : constant is 1;
+    attribute mti_svvh_generic_type of WCLK_POLARITY : constant is 1;
+    attribute mti_svvh_generic_type of WCLKE_POLARITY : constant is 1;
+    attribute mti_svvh_generic_type of WE_POLARITY : constant is 1;
+    attribute mti_svvh_generic_type of WRITE_MODE : constant is 1;
+    attribute mti_svvh_generic_type of RCLK_POLARITY : constant is 1;
+    attribute mti_svvh_generic_type of RE_POLARITY : constant is 1;
+    attribute mti_svvh_generic_type of OUTPUT_REG : constant is 1;
+    attribute mti_svvh_generic_type of BYTEEN_POLARITY : constant is 1;
+    attribute mti_svvh_generic_type of RST_POLARITY : constant is 1;
+    attribute mti_svvh_generic_type of RESET_RAM : constant is 1;
+    attribute mti_svvh_generic_type of RESET_OUTREG : constant is 1;
+    attribute mti_svvh_generic_type of WADDREN_POLARITY : constant is 1;
+    attribute mti_svvh_generic_type of RADDREN_POLARITY : constant is 1;
+    attribute mti_svvh_generic_type of DATA_WIDTH_A : constant is 1;
+    attribute mti_svvh_generic_type of DATA_WIDTH_B : constant is 1;
+    attribute mti_svvh_generic_type of ADDR_WIDTH_A : constant is 1;
+    attribute mti_svvh_generic_type of ADDR_WIDTH_B : constant is 1;
+    attribute mti_svvh_generic_type of BYTEEN_ENABLE : constant is 1;
+    attribute mti_svvh_generic_type of BYTEEN_WIDTH : constant is 1;
+end bram_wrapper_mwm_a6fa4ccad95f4e46b0755c906141a4ea;

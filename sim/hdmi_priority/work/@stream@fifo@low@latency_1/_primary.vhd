@@ -1,0 +1,17 @@
+library verilog;
+use verilog.vl_types.all;
+entity StreamFifoLowLatency_1 is
+    port(
+        io_push_valid   : in     vl_logic;
+        io_push_ready   : out    vl_logic;
+        io_push_payload_len: in     vl_logic_vector(7 downto 0);
+        io_pop_valid    : out    vl_logic;
+        io_pop_ready    : in     vl_logic;
+        io_pop_payload_len: out    vl_logic_vector(7 downto 0);
+        io_flush        : in     vl_logic;
+        io_occupancy    : out    vl_logic_vector(2 downto 0);
+        io_availability : out    vl_logic_vector(2 downto 0);
+        io_memoryClk    : in     vl_logic;
+        system_ddr_ddrLogic_ddrAReset_reset: in     vl_logic
+    );
+end StreamFifoLowLatency_1;

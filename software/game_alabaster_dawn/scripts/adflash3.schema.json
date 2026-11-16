@@ -1,0 +1,12 @@
+{
+ "format":"ADFLASH3", "endian":"little", "header_size":64,"entry_size":64,
+ "header_struct":"<8sIIIIQQQIIII",
+ "header":{"0:8":"ADFLASH3","8:u32":"version=3","12:u32":"header_bytes=64","16:u32":"entry_bytes=64","20:u32":"count 1..512","24:u64":"directory_offset=64","32:u64":"payload_offset=align64(64+64count)","40:u64":"total_bytes exact file size","48:u32":"directoryCRC exactly count*64 bytes","52:u32":"payloadCRC [payload_offset,total) includes FF gaps","56:u32":"headerCRC over header64 with this field zero","60:u32":"flags=0"},
+ "entry_struct":"<IIIIQQQIIIIII",
+ "entry":{"0:u32":"kind 1player 2arrow 3scene 4dragon 5flow 6countdown 7enemy 8precomputed 9wave (ids0/1 codec1 predictor0; ADWV1 parsed by wave owner) 10hud (id0 codec1 predictor0 alignment64; payload parsed by HUD owner)","4:u32":"id","8:u32":"codec 0stored 1rawDEFLATE","12:u32":"predictor 0=none 1=legacy consumer filter; exact filter in consumer C table, loader MUST NOT inverse-predict","16:u64":"pack-relative offset","24:u64":"packed bytes","32:u64":"raw decoded bytes BEFORE inverse predictor","40:u32":"alignment power-of-two 1..4096","44:u32":"packedCRC","48:u32":"rawCRC","52:u32":"flags=0","56:u32":"reserved=0","60:u32":"reserved=0"},
+ "crc":"IEEE CRC32 / zlib.crc32",
+ "aliases":"No alias directory entries. Scene mode4 restores prior consumer arena without external_decode.",
+ "contract":"external_get/source returns packed view; external_decode alone inflates and checks rawCRC; legacy consumer subsequently inverse-predicts. No double inflate.",
+ "limits":{"flash":33554432,"app":2097152,"pack_flash_offset":2097152,"runtime_pack_stage":16777216,"max_entries":512},
+ "authority":"Parent relay final agreement: this header with separate directoryCRC; C implementation being synchronized."
+}

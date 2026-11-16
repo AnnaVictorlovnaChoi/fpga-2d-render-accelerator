@@ -1,0 +1,65 @@
+library verilog;
+use verilog.vl_types.all;
+entity axi_gpu_cmd_axi_slave is
+    generic(
+        AXI_ADDR_WIDTH  : integer := 32;
+        AXI_DATA_WIDTH  : integer := 32;
+        AXI_ID_WIDTH    : integer := 8
+    );
+    port(
+        s_axi_aclk      : in     vl_logic;
+        s_axi_aresetn   : in     vl_logic;
+        s_axi_awid      : in     vl_logic_vector;
+        s_axi_awaddr    : in     vl_logic_vector;
+        s_axi_awlen     : in     vl_logic_vector(7 downto 0);
+        s_axi_awsize    : in     vl_logic_vector(2 downto 0);
+        s_axi_awburst   : in     vl_logic_vector(1 downto 0);
+        s_axi_awcache   : in     vl_logic_vector(3 downto 0);
+        s_axi_awqos     : in     vl_logic_vector(3 downto 0);
+        s_axi_awregion  : in     vl_logic_vector(3 downto 0);
+        s_axi_awprot    : in     vl_logic_vector(2 downto 0);
+        s_axi_awlock    : in     vl_logic;
+        s_axi_awvalid   : in     vl_logic;
+        s_axi_awready   : out    vl_logic;
+        s_axi_wdata     : in     vl_logic_vector;
+        s_axi_wstrb     : in     vl_logic_vector;
+        s_axi_wlast     : in     vl_logic;
+        s_axi_wvalid    : in     vl_logic;
+        s_axi_wready    : out    vl_logic;
+        s_axi_bid       : out    vl_logic_vector;
+        s_axi_bresp     : out    vl_logic_vector(1 downto 0);
+        s_axi_bvalid    : out    vl_logic;
+        s_axi_bready    : in     vl_logic;
+        s_axi_arid      : in     vl_logic_vector;
+        s_axi_araddr    : in     vl_logic_vector;
+        s_axi_arlen     : in     vl_logic_vector(7 downto 0);
+        s_axi_arsize    : in     vl_logic_vector(2 downto 0);
+        s_axi_arburst   : in     vl_logic_vector(1 downto 0);
+        s_axi_arcache   : in     vl_logic_vector(3 downto 0);
+        s_axi_arqos     : in     vl_logic_vector(3 downto 0);
+        s_axi_arregion  : in     vl_logic_vector(3 downto 0);
+        s_axi_arprot    : in     vl_logic_vector(2 downto 0);
+        s_axi_arlock    : in     vl_logic;
+        s_axi_arvalid   : in     vl_logic;
+        s_axi_arready   : out    vl_logic;
+        s_axi_rid       : out    vl_logic_vector;
+        s_axi_rdata     : out    vl_logic_vector;
+        s_axi_rresp     : out    vl_logic_vector(1 downto 0);
+        s_axi_rlast     : out    vl_logic;
+        s_axi_rvalid    : out    vl_logic;
+        s_axi_rready    : in     vl_logic;
+        cmd_fifo_wr_en  : out    vl_logic;
+        cmd_fifo_wr_data: out    vl_logic_vector;
+        cmd_fifo_wr_strb: out    vl_logic_vector;
+        cmd_fifo_full   : in     vl_logic;
+        cmd_fifo_prog_full: in     vl_logic;
+        cmd_fifo_empty  : in     vl_logic;
+        engine_busy     : in     vl_logic;
+        engine_done     : in     vl_logic;
+        engine_error    : in     vl_logic
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of AXI_ADDR_WIDTH : constant is 2;
+    attribute mti_svvh_generic_type of AXI_DATA_WIDTH : constant is 2;
+    attribute mti_svvh_generic_type of AXI_ID_WIDTH : constant is 2;
+end axi_gpu_cmd_axi_slave;

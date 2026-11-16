@@ -1,0 +1,40 @@
+# ---- 编译产物 / 比特流 ----
+*.bit
+*.hex
+*.mcs
+*.elf
+*.o
+*.obj
+*.pyc
+__pycache__/
+
+# ---- EDA 工程输出 ----
+**/outflow/
+**/work_*/
+**/*.qdb/
+**/*.vdb/
+**/*.rpt/
+**/transcript
+**/*.log
+*.vcd
+*.wlf
+*.psm
+*.dbs
+*.prw
+*.qtl
+*.qpg
+
+# ---- 大体积素材 / 构建产物 ----
+software/**/deliverables/
+software/**/resources/
+software/**/build/
+software/**/objects/
+
+# ---- 系统 / 编辑器 ----
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*~
+.vscode/
+.idea/

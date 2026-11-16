@@ -1,0 +1,63 @@
+library verilog;
+use verilog.vl_types.all;
+entity StreamArbiter_1 is
+    generic(
+        HDMI_PRIORITY   : integer := 0
+    );
+    port(
+        io_inputs_0_valid: in     vl_logic;
+        io_inputs_0_ready: out    vl_logic;
+        io_inputs_0_payload_addr: in     vl_logic_vector(31 downto 0);
+        io_inputs_0_payload_id: in     vl_logic_vector(5 downto 0);
+        io_inputs_0_payload_region: in     vl_logic_vector(3 downto 0);
+        io_inputs_0_payload_len: in     vl_logic_vector(7 downto 0);
+        io_inputs_0_payload_size: in     vl_logic_vector(2 downto 0);
+        io_inputs_0_payload_burst: in     vl_logic_vector(1 downto 0);
+        io_inputs_0_payload_lock: in     vl_logic_vector(0 downto 0);
+        io_inputs_0_payload_cache: in     vl_logic_vector(3 downto 0);
+        io_inputs_0_payload_qos: in     vl_logic_vector(3 downto 0);
+        io_inputs_0_payload_prot: in     vl_logic_vector(2 downto 0);
+        io_inputs_1_valid: in     vl_logic;
+        io_inputs_1_ready: out    vl_logic;
+        io_inputs_1_payload_addr: in     vl_logic_vector(31 downto 0);
+        io_inputs_1_payload_id: in     vl_logic_vector(5 downto 0);
+        io_inputs_1_payload_region: in     vl_logic_vector(3 downto 0);
+        io_inputs_1_payload_len: in     vl_logic_vector(7 downto 0);
+        io_inputs_1_payload_size: in     vl_logic_vector(2 downto 0);
+        io_inputs_1_payload_burst: in     vl_logic_vector(1 downto 0);
+        io_inputs_1_payload_lock: in     vl_logic_vector(0 downto 0);
+        io_inputs_1_payload_cache: in     vl_logic_vector(3 downto 0);
+        io_inputs_1_payload_qos: in     vl_logic_vector(3 downto 0);
+        io_inputs_1_payload_prot: in     vl_logic_vector(2 downto 0);
+        io_inputs_2_valid: in     vl_logic;
+        io_inputs_2_ready: out    vl_logic;
+        io_inputs_2_payload_addr: in     vl_logic_vector(31 downto 0);
+        io_inputs_2_payload_id: in     vl_logic_vector(5 downto 0);
+        io_inputs_2_payload_region: in     vl_logic_vector(3 downto 0);
+        io_inputs_2_payload_len: in     vl_logic_vector(7 downto 0);
+        io_inputs_2_payload_size: in     vl_logic_vector(2 downto 0);
+        io_inputs_2_payload_burst: in     vl_logic_vector(1 downto 0);
+        io_inputs_2_payload_lock: in     vl_logic_vector(0 downto 0);
+        io_inputs_2_payload_cache: in     vl_logic_vector(3 downto 0);
+        io_inputs_2_payload_qos: in     vl_logic_vector(3 downto 0);
+        io_inputs_2_payload_prot: in     vl_logic_vector(2 downto 0);
+        io_output_valid : out    vl_logic;
+        io_output_ready : in     vl_logic;
+        io_output_payload_addr: out    vl_logic_vector(31 downto 0);
+        io_output_payload_id: out    vl_logic_vector(5 downto 0);
+        io_output_payload_region: out    vl_logic_vector(3 downto 0);
+        io_output_payload_len: out    vl_logic_vector(7 downto 0);
+        io_output_payload_size: out    vl_logic_vector(2 downto 0);
+        io_output_payload_burst: out    vl_logic_vector(1 downto 0);
+        io_output_payload_lock: out    vl_logic_vector(0 downto 0);
+        io_output_payload_cache: out    vl_logic_vector(3 downto 0);
+        io_output_payload_qos: out    vl_logic_vector(3 downto 0);
+        io_output_payload_prot: out    vl_logic_vector(2 downto 0);
+        io_chosen       : out    vl_logic_vector(1 downto 0);
+        io_chosenOH     : out    vl_logic_vector(2 downto 0);
+        io_memoryClk    : in     vl_logic;
+        ddrCd_logic_outputReset: in     vl_logic
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of HDMI_PRIORITY : constant is 1;
+end StreamArbiter_1;

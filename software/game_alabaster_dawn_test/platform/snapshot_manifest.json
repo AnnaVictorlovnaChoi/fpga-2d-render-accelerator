@@ -1,0 +1,240 @@
+{
+  "unchanged_files": [
+    {
+      "local": "platform/common/bsp.mk",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\common\\bsp.mk",
+      "sha256": "b1cd52810f86a11e65e08fbacf1e8e1ea22b4c1e51812602d8f1fb5b449de082"
+    },
+    {
+      "local": "platform/common/riscv64-unknown-elf.mk",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\common\\riscv64-unknown-elf.mk",
+      "sha256": "828db047a6f87f7fd811dd4c765189c01b069d0998a35a76856c96fdd9afc726"
+    },
+    {
+      "local": "platform/common/smpFunc.S",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\common\\smpFunc.S",
+      "sha256": "39bdef6368c2438bfec53e2e208f53ba56fe1b56e99a01822a67941a716cee80"
+    },
+    {
+      "local": "platform/common/smpInit.S",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\common\\smpInit.S",
+      "sha256": "0312618bbc02b4cf54945fa31ec2111f4a8c725ee15d3d4e004a82a78043e95a"
+    },
+    {
+      "local": "platform/common/standalone.mk",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\common\\standalone.mk",
+      "sha256": "9c8016c2999f2e7467706bb69642c9dfdd3e001e20a1cb96c64e6ddd9f947a6a"
+    },
+    {
+      "local": "platform/common/start.S",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\common\\start.S",
+      "sha256": "1f766009dfadd1b2b7808433054e211cd78ff14ec1054af85a8a61b6b413b462"
+    },
+    {
+      "local": "platform/common/start_int.S",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\common\\start_int.S",
+      "sha256": "44a8891bcec0a8f4a6f3e6230fe1812c094817c13db9c4607cef6a980dcf48f4"
+    },
+    {
+      "local": "platform/common/syscalls.c",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\common\\syscalls.c",
+      "sha256": "6b0daec7d4065f85d4b497ac13e9fecb1fa6a7de70a841d5a0c72d7c3d0997c3"
+    },
+    {
+      "local": "platform/common/trap.S",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\common\\trap.S",
+      "sha256": "1811660c9dc024c915a7a9b6dbb95756dd1c17f9da30150cce6be464c3378d05"
+    },
+    {
+      "local": "platform/driver/apb3_cl.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\apb3_cl.h",
+      "sha256": "7356a83e65134b4cafc27092381a29f0ea4beeb51b614a976558b6504a249e1b"
+    },
+    {
+      "local": "platform/driver/clint.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\clint.h",
+      "sha256": "43bca7f578c070dfde36cd82b27701cf3a468925e23f4d1af3a5612cc1623a68"
+    },
+    {
+      "local": "platform/driver/DDRCali_i2c.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\DDRCali_i2c.h",
+      "sha256": "e9a3fa5a38830d0b108e98e931d05ed08753ccfda6f34b2a566868f3a33ce5f4"
+    },
+    {
+      "local": "platform/driver/device/emc1413.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\device\\emc1413.h",
+      "sha256": "856bbab97d08ae16b883ce1be2f0f2219aa12c3d66031564f2ae416d96db234e"
+    },
+    {
+      "local": "platform/driver/device/pcf8523.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\device\\pcf8523.h",
+      "sha256": "2858d2104288c6b52bb8bb41171c54fe79c1e2466d6f904bcc707c2d31c63b16"
+    },
+    {
+      "local": "platform/driver/dmasg.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\dmasg.h",
+      "sha256": "0d22adf3bb21f819ec9299a464d22e9beebd6c8f5b3a52967fc5807e200c2828"
+    },
+    {
+      "local": "platform/driver/efx_mmc_driver.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\efx_mmc_driver.h",
+      "sha256": "0974a9bcebf66e545df011c9be3fcc6a53c70c89bc0255f34808f02d8048ea5a"
+    },
+    {
+      "local": "platform/driver/efx_tse_mac.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\efx_tse_mac.h",
+      "sha256": "3ebe162217b5b8ea3f3f4b6c8ad11fb57e60f5cd8bee359d58c62453968224cb"
+    },
+    {
+      "local": "platform/driver/efx_tse_phy.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\efx_tse_phy.h",
+      "sha256": "f082f237571a37fca93605a68504b80b26fc96d519c12c5a4fe266f05bb76f91"
+    },
+    {
+      "local": "platform/driver/gpio.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\gpio.h",
+      "sha256": "ea3c2aafde8537595cfa9cbc9db005bbfd61b0c43b8e344afa84358221764b80"
+    },
+    {
+      "local": "platform/driver/i2c.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\i2c.h",
+      "sha256": "0e90a1e6366d104c4551d0938bc3397d354b3d2ccf0966a01fb934ae93f908eb"
+    },
+    {
+      "local": "platform/driver/io.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\io.h",
+      "sha256": "0cc5e1ca913329d844c5e5384198d099d446e43da53d59683071417a61cc84ba"
+    },
+    {
+      "local": "platform/driver/mmc.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\mmc.h",
+      "sha256": "e6babc7e44837983eed3de6eaca51912b0fafd20d8e1503c3f452f224e6797e7"
+    },
+    {
+      "local": "platform/driver/plic.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\plic.h",
+      "sha256": "2bc52896036c782d154f706584268df91e9939289c676ffda985a4b2df3e296c"
+    },
+    {
+      "local": "platform/driver/prescaler.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\prescaler.h",
+      "sha256": "467a0fe34fb0601033372cbf8c50c8522f09733a01b7bbee060eec98a9c29e6f"
+    },
+    {
+      "local": "platform/driver/riscv.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\riscv.h",
+      "sha256": "139261cff42e0a6abf45154a962afe93705769a6061eb416c261cf1e19063f02"
+    },
+    {
+      "local": "platform/driver/rtl8211fd.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\rtl8211fd.h",
+      "sha256": "867a6b495a95e3582c5384a76ad22ec0021160a82d09f4ccdd146bcec710fca4"
+    },
+    {
+      "local": "platform/driver/spi.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\spi.h",
+      "sha256": "9ed8239f1b91da2d1f8587d690c8bfdae344f87e93eacaa986464c79cc42b8ae"
+    },
+    {
+      "local": "platform/driver/spiFlash.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\spiFlash.h",
+      "sha256": "691de6eef79ee94e91f9b696c102c93572e7c145c131c35c37b2e7bb2ff74cce"
+    },
+    {
+      "local": "platform/driver/start.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\start.h",
+      "sha256": "f252b3951e1910a2b03352542a772b7b2eee112f06f39bc40764e1696eda2ba8"
+    },
+    {
+      "local": "platform/driver/timer.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\timer.h",
+      "sha256": "d6c810e517ccf4fe5004f4ff35afe4f41b0a87497bd79c5474443bd38a5a5247"
+    },
+    {
+      "local": "platform/driver/type.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\type.h",
+      "sha256": "c773edf1098a6839853e1d5abb94c140d68b706fd507377ff985ea4a5639b70a"
+    },
+    {
+      "local": "platform/driver/uart.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\uart.h",
+      "sha256": "05dfd0cf1df75a7a8dd6fd3df6f1dc89f0db99233a69b69dcb57da9cbcd58b24"
+    },
+    {
+      "local": "platform/driver/vexriscv.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\vexriscv.h",
+      "sha256": "8f4d897665fd497dbb4d34f61a8938081e27f8da257852ae692f924e8cd72e02"
+    },
+    {
+      "local": "platform/driver/watchdog.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\driver\\watchdog.h",
+      "sha256": "555bde4467768ef05f1a1cfd84665936307708976781c5825215ee86766d2f7f"
+    },
+    {
+      "local": "platform/bsp/include/bsp.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\bsp.h",
+      "sha256": "4a8637319ae9918f771fcb394491109d80a59d0b4de3fe5ab7f44570e7cecb57"
+    },
+    {
+      "local": "platform/bsp/include/compatibility.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\compatibility.h",
+      "sha256": "51227bcfc49b1511b9802cefef07b0c9589b8c7e6206d8d84e410e4bf2a70eec"
+    },
+    {
+      "local": "platform/bsp/include/freertosHalConfig.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\freertosHalConfig.h",
+      "sha256": "1a193b788b55e906041b9298f2f0fee1e7b77739351d0e0675eccecbe01b6315"
+    },
+    {
+      "local": "platform/bsp/include/LICENSE.MD",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\LICENSE.MD",
+      "sha256": "fcad259554a1118f297273bc2ae8805b07b066d297e1c3b9a6ac82d815add8dd"
+    },
+    {
+      "local": "platform/bsp/include/print.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\print.h",
+      "sha256": "ecfae60245c1f3b4e11d5c9e093a3daeeb8f89e1ae4eb69c17ae6d7f36223852"
+    },
+    {
+      "local": "platform/bsp/include/print_full.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\print_full.h",
+      "sha256": "64083154100c17f33b7a2f421388ec02c4072ec0f3509cf9e9097260534195ca"
+    },
+    {
+      "local": "platform/bsp/include/semihosting.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\semihosting.h",
+      "sha256": "854082d59b5396ffc8b8154e5568a3920ef957faa327895401f998ed69927226"
+    },
+    {
+      "local": "platform/bsp/include/soc.dts",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\soc.dts",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "local": "platform/bsp/include/soc.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\soc.h",
+      "sha256": "74ee884f5f3383e40f4ea2a96b795991d22a4021f50da7c030d7b3831a53bc68"
+    },
+    {
+      "local": "platform/bsp/include/soc.mk",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\bsp\\efinix\\EfxSapphireSoc\\include\\soc.mk",
+      "sha256": "3641490e4d7b2a0eecb0f0c9661bd1a38831e8527f5f96d1a017510d5d0d2cf0"
+    },
+    {
+      "local": "platform/gpu/2D_DMA.c",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\HDMI_Stress\\src\\2D_DMA.c",
+      "sha256": "0aad15540c0a2eabdfd0113944d92d1e405578fe685fa251d2fca66c7cec0698"
+    },
+    {
+      "local": "platform/gpu/2D_DMA.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\HDMI_Stress\\src\\2D_DMA.h",
+      "sha256": "0dd576dc0121d83050b236c0a3a172c93cd132064675ae6d26a8a5b0f06f9e74"
+    },
+    {
+      "local": "platform/gpu/userDef.h",
+      "source": "F:\\Efinity\\project_2026fpga\\v8_Ti60F225_demo_new_AXIupdate\\Ti60F225_demo_new\\par\\ddr_demo_ti60\\embedded_sw\\soc\\software\\standalone\\HDMI_Stress\\src\\userDef.h",
+      "sha256": "f774537b5e26307cf95b3abbbdd02872b5571edda01c02bcc5f533340a618186"
+    }
+  ],
+  "adapted_linker": "platform/hdmi_ddr.ld: RAM=95M, BSS/stack NOLOAD"
+}

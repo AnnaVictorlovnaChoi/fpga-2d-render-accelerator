@@ -1,0 +1,46 @@
+library verilog;
+use verilog.vl_types.all;
+entity InstructionCache is
+    port(
+        io_flush        : in     vl_logic;
+        io_cpu_prefetch_isValid: in     vl_logic;
+        io_cpu_prefetch_haltIt: out    vl_logic;
+        io_cpu_prefetch_pc: in     vl_logic_vector(31 downto 0);
+        io_cpu_fetch_isValid: in     vl_logic;
+        io_cpu_fetch_isStuck: in     vl_logic;
+        io_cpu_fetch_isRemoved: in     vl_logic;
+        io_cpu_fetch_pc : in     vl_logic_vector(31 downto 0);
+        io_cpu_fetch_data: out    vl_logic_vector(31 downto 0);
+        io_cpu_fetch_mmuRsp_physicalAddress: in     vl_logic_vector(31 downto 0);
+        io_cpu_fetch_mmuRsp_isIoAccess: in     vl_logic;
+        io_cpu_fetch_mmuRsp_isPaging: in     vl_logic;
+        io_cpu_fetch_mmuRsp_allowRead: in     vl_logic;
+        io_cpu_fetch_mmuRsp_allowWrite: in     vl_logic;
+        io_cpu_fetch_mmuRsp_allowExecute: in     vl_logic;
+        io_cpu_fetch_mmuRsp_exception: in     vl_logic;
+        io_cpu_fetch_mmuRsp_refilling: in     vl_logic;
+        io_cpu_fetch_mmuRsp_bypassTranslation: in     vl_logic;
+        io_cpu_fetch_physicalAddress: out    vl_logic_vector(31 downto 0);
+        io_cpu_decode_isValid: in     vl_logic;
+        io_cpu_decode_isStuck: in     vl_logic;
+        io_cpu_decode_pc: in     vl_logic_vector(31 downto 0);
+        io_cpu_decode_physicalAddress: out    vl_logic_vector(31 downto 0);
+        io_cpu_decode_data: out    vl_logic_vector(31 downto 0);
+        io_cpu_decode_cacheMiss: out    vl_logic;
+        io_cpu_decode_error: out    vl_logic;
+        io_cpu_decode_mmuRefilling: out    vl_logic;
+        io_cpu_decode_mmuException: out    vl_logic;
+        io_cpu_decode_isUser: in     vl_logic;
+        io_cpu_fill_valid: in     vl_logic;
+        io_cpu_fill_payload: in     vl_logic_vector(31 downto 0);
+        io_mem_cmd_valid: out    vl_logic;
+        io_mem_cmd_ready: in     vl_logic;
+        io_mem_cmd_payload_address: out    vl_logic_vector(31 downto 0);
+        io_mem_cmd_payload_size: out    vl_logic_vector(2 downto 0);
+        io_mem_rsp_valid: in     vl_logic;
+        io_mem_rsp_payload_data: in     vl_logic_vector(31 downto 0);
+        io_mem_rsp_payload_error: in     vl_logic;
+        io_systemClk    : in     vl_logic;
+        systemCd_logic_outputReset: in     vl_logic
+    );
+end InstructionCache;

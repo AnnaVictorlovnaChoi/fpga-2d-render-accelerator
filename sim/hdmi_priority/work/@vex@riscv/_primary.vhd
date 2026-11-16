@@ -1,0 +1,40 @@
+library verilog;
+use verilog.vl_types.all;
+entity VexRiscv is
+    port(
+        dBus_cmd_valid  : out    vl_logic;
+        dBus_cmd_ready  : in     vl_logic;
+        dBus_cmd_payload_wr: out    vl_logic;
+        dBus_cmd_payload_uncached: out    vl_logic;
+        dBus_cmd_payload_address: out    vl_logic_vector(31 downto 0);
+        dBus_cmd_payload_data: out    vl_logic_vector(31 downto 0);
+        dBus_cmd_payload_mask: out    vl_logic_vector(3 downto 0);
+        dBus_cmd_payload_size: out    vl_logic_vector(2 downto 0);
+        dBus_cmd_payload_last: out    vl_logic;
+        dBus_rsp_valid  : in     vl_logic;
+        dBus_rsp_payload_last: in     vl_logic;
+        dBus_rsp_payload_data: in     vl_logic_vector(31 downto 0);
+        dBus_rsp_payload_error: in     vl_logic;
+        timerInterrupt  : in     vl_logic;
+        externalInterrupt: in     vl_logic;
+        softwareInterrupt: in     vl_logic;
+        debug_bus_cmd_valid: in     vl_logic;
+        debug_bus_cmd_ready: out    vl_logic;
+        debug_bus_cmd_payload_wr: in     vl_logic;
+        debug_bus_cmd_payload_address: in     vl_logic_vector(7 downto 0);
+        debug_bus_cmd_payload_data: in     vl_logic_vector(31 downto 0);
+        debug_bus_rsp_data: out    vl_logic_vector(31 downto 0);
+        debug_resetOut  : out    vl_logic;
+        iBus_cmd_valid  : out    vl_logic;
+        iBus_cmd_ready  : in     vl_logic;
+        iBus_cmd_payload_address: out    vl_logic_vector(31 downto 0);
+        iBus_cmd_payload_size: out    vl_logic_vector(2 downto 0);
+        iBus_rsp_valid  : in     vl_logic;
+        iBus_rsp_payload_data: in     vl_logic_vector(31 downto 0);
+        iBus_rsp_payload_error: in     vl_logic;
+        stopTime        : out    vl_logic;
+        io_systemClk    : in     vl_logic;
+        systemCd_logic_outputReset: in     vl_logic;
+        debugCd_logic_outputReset: in     vl_logic
+    );
+end VexRiscv;

@@ -1,0 +1,46 @@
+library verilog;
+use verilog.vl_types.all;
+entity BmbToAxi4SharedBridge is
+    port(
+        io_input_cmd_valid: in     vl_logic;
+        io_input_cmd_ready: out    vl_logic;
+        io_input_cmd_payload_last: in     vl_logic;
+        io_input_cmd_payload_fragment_source: in     vl_logic_vector(0 downto 0);
+        io_input_cmd_payload_fragment_opcode: in     vl_logic_vector(0 downto 0);
+        io_input_cmd_payload_fragment_address: in     vl_logic_vector(31 downto 0);
+        io_input_cmd_payload_fragment_length: in     vl_logic_vector(5 downto 0);
+        io_input_cmd_payload_fragment_data: in     vl_logic_vector(127 downto 0);
+        io_input_cmd_payload_fragment_mask: in     vl_logic_vector(15 downto 0);
+        io_input_cmd_payload_fragment_context: in     vl_logic_vector(4 downto 0);
+        io_input_rsp_valid: out    vl_logic;
+        io_input_rsp_ready: in     vl_logic;
+        io_input_rsp_payload_last: out    vl_logic;
+        io_input_rsp_payload_fragment_source: out    vl_logic_vector(0 downto 0);
+        io_input_rsp_payload_fragment_opcode: out    vl_logic_vector(0 downto 0);
+        io_input_rsp_payload_fragment_data: out    vl_logic_vector(127 downto 0);
+        io_input_rsp_payload_fragment_context: out    vl_logic_vector(4 downto 0);
+        io_output_arw_valid: out    vl_logic;
+        io_output_arw_ready: in     vl_logic;
+        io_output_arw_payload_addr: out    vl_logic_vector(31 downto 0);
+        io_output_arw_payload_len: out    vl_logic_vector(7 downto 0);
+        io_output_arw_payload_size: out    vl_logic_vector(2 downto 0);
+        io_output_arw_payload_cache: out    vl_logic_vector(3 downto 0);
+        io_output_arw_payload_prot: out    vl_logic_vector(2 downto 0);
+        io_output_arw_payload_write: out    vl_logic;
+        io_output_w_valid: out    vl_logic;
+        io_output_w_ready: in     vl_logic;
+        io_output_w_payload_data: out    vl_logic_vector(127 downto 0);
+        io_output_w_payload_strb: out    vl_logic_vector(15 downto 0);
+        io_output_w_payload_last: out    vl_logic;
+        io_output_b_valid: in     vl_logic;
+        io_output_b_ready: out    vl_logic;
+        io_output_b_payload_resp: in     vl_logic_vector(1 downto 0);
+        io_output_r_valid: in     vl_logic;
+        io_output_r_ready: out    vl_logic;
+        io_output_r_payload_data: in     vl_logic_vector(127 downto 0);
+        io_output_r_payload_resp: in     vl_logic_vector(1 downto 0);
+        io_output_r_payload_last: in     vl_logic;
+        io_memoryClk    : in     vl_logic;
+        ddrCd_logic_outputReset: in     vl_logic
+    );
+end BmbToAxi4SharedBridge;
